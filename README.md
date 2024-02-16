@@ -2,6 +2,9 @@
 
 Drop-in replacement for OpenGLES framework for iOS using [ANGLE](http://github.com/google/angle) and [MetalANGLE's MGLKit](https://github.com/kakashidinho/metalangle/tree/master/ios/xcode/MGLKit).
 
+> [!NOTE]
+Not all apps will work, it may show a black screen instead. Please open an issue and specify your game.
+
 ## Why?
 - OpenGLES game is limited to 60fps regardless of refresh rate of your device.
 - Metal Performance HUD is not available in system OpenGLES framework.
