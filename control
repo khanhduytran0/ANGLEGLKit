@@ -1,0 +1,9 @@
+Package: com.kdt.angleglkit
+Name: ANGLEGLKit
+Version: 1.0
+Architecture: iphoneos-arm64
+Description: This control file is unused.
+Maintainer: khanhduytran0
+Author: khanhduytran0
+Section: Libraries
+Depends: firmware (>= 11.0)
