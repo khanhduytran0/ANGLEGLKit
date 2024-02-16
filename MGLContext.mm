@@ -249,13 +249,13 @@ EGLContext CreateEGLContext(EGLDisplay display, MGLRenderingAPI api, EGLContext 
     return [layer present];
 }
 
-- (BOOL)renderbufferStorage:(NSUInteger)target fromDrawable:(id<EAGLDrawable>)drawable {
-    
-    [self setCurrentContextForLayer:(id)drawable];
-    return YES; // FIXME!
+- (BOOL)renderbufferStorage:(NSUInteger)target fromDrawable:(id<EAGLDrawable>)drawable
+{
+    return [self setCurrentContextForLayer:(id)drawable];
 }
 
-- (BOOL)presentRenderbuffer:(NSUInteger)target {
+- (BOOL)presentRenderbuffer:(NSUInteger)target
+{
     return [self present:MGLContext.currentLayer];
 }
 
